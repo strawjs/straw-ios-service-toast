@@ -1,4 +1,5 @@
 #import <XCTest/XCTest.h>
+#import "StrawServiceToast.h"
 
 @interface StrawServiceToastTests : XCTestCase
 

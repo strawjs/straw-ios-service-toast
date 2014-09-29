@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		097A519039744E3582A09C66 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 755639BFD20E4115BCA509E3 /* libPods.a */; };
 		1995FD2719DA1BCF0066A8E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1995FD2619DA1BCF0066A8E1 /* Foundation.framework */; };
 		1995FD2C19DA1BCF0066A8E1 /* StrawServiceToast.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1995FD2B19DA1BCF0066A8E1 /* StrawServiceToast.h */; };
 		1995FD2E19DA1BCF0066A8E1 /* StrawServiceToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1995FD2D19DA1BCF0066A8E1 /* StrawServiceToast.m */; };
@@ -53,6 +54,8 @@
 		1995FD3E19DA1BCF0066A8E1 /* StrawServiceToastTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StrawServiceToastTests-Info.plist"; sourceTree = "<group>"; };
 		1995FD4019DA1BCF0066A8E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1995FD4219DA1BCF0066A8E1 /* StrawServiceToastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrawServiceToastTests.m; sourceTree = "<group>"; };
+		49450EC82A534741A1585E4C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		755639BFD20E4115BCA509E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1995FD2719DA1BCF0066A8E1 /* Foundation.framework in Frameworks */,
+				097A519039744E3582A09C66 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				1995FD3C19DA1BCF0066A8E1 /* StrawServiceToastTests */,
 				1995FD2519DA1BCF0066A8E1 /* Frameworks */,
 				1995FD2419DA1BCF0066A8E1 /* Products */,
+				49450EC82A534741A1585E4C /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +108,7 @@
 				1995FD2619DA1BCF0066A8E1 /* Foundation.framework */,
 				1995FD3419DA1BCF0066A8E1 /* XCTest.framework */,
 				1995FD3719DA1BCF0066A8E1 /* UIKit.framework */,
+				755639BFD20E4115BCA509E3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1995FD4619DA1BCF0066A8E1 /* Build configuration list for PBXNativeTarget "StrawServiceToast" */;
 			buildPhases = (
+				89C461F4A10E4ACC98BF7545 /* Check Pods Manifest.lock */,
 				1995FD1F19DA1BCF0066A8E1 /* Sources */,
 				1995FD2019DA1BCF0066A8E1 /* Frameworks */,
 				1995FD2119DA1BCF0066A8E1 /* CopyFiles */,
+				97721E011E93485283906886 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,6 +226,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89C461F4A10E4ACC98BF7545 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97721E011E93485283906886 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1995FD1F19DA1BCF0066A8E1 /* Sources */ = {
@@ -328,6 +369,7 @@
 		};
 		1995FD4719DA1BCF0066A8E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49450EC82A534741A1585E4C /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/StrawServiceToast.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -340,6 +382,7 @@
 		};
 		1995FD4819DA1BCF0066A8E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49450EC82A534741A1585E4C /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/StrawServiceToast.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -352,6 +395,7 @@
 		};
 		1995FD4A19DA1BCF0066A8E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49450EC82A534741A1585E4C /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -372,6 +416,7 @@
 		};
 		1995FD4B19DA1BCF0066A8E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49450EC82A534741A1585E4C /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -405,6 +450,7 @@
 				1995FD4819DA1BCF0066A8E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1995FD4919DA1BCF0066A8E1 /* Build configuration list for PBXNativeTarget "StrawServiceToastTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +459,7 @@
 				1995FD4B19DA1BCF0066A8E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
