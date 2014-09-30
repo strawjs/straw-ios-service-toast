@@ -1,4 +1,4 @@
-# straw-ios-service-toast v0.0.0
+# straw-ios-service-toast v0.1.0
 
 [![Build Status](https://travis-ci.org/strawjs/straw-ios-service-toast.svg)](https://travis-ci.org/strawjs/straw-ios-service-toast)
 
