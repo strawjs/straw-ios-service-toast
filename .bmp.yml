@@ -6,3 +6,6 @@ files:
   - doc/v%.%.%
   Makefile:
   - doc/v%.%.%
+  StrawServiceToast.podspec:
+  - '"%.%.%"'
+  - ':tag => "v%.%.%"'
