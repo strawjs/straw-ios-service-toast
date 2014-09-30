@@ -4,7 +4,7 @@ doc:
 	appledoc --project-name 'StrawServiceToast' --project-company 'strawjs.org' --company-id 'org.strawjs' --output doc/dev --create-html --no-create-docset StrawServiceToast
 
 doc-release:
-	appledoc --project-name 'StrawServiceToast' --project-company 'strawjs.org' --company-id 'org.strawjs' --output doc/v0.0.0 --create-html --no-create-docset StrawServiceToast
+	appledoc --project-name 'StrawServiceToast' --project-company 'strawjs.org' --company-id 'org.strawjs' --output doc/v0.1.0 --create-html --no-create-docset StrawServiceToast
 
 release:
 	pod trunk push StrawServiceLocale.podspec
