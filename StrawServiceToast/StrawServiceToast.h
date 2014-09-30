@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <Straw/Straw.h>
-#import <UIView+Toast.h>
+#import <Toast/UIView+Toast.h>
 
 /**
  StrawServiceToast is Straw Service class to show Toast UI component on the screen.
