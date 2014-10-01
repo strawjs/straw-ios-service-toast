@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.source_files  = "StrawServiceToast/**/*.{h,m}"
 
   s.dependency "Straw", "~> 0.5.0"
+  s.dependency "Toast", "~> 2.3"
 
   s.requires_arc = true
 
