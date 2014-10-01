@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "StrawServiceToast"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "Toast service of Straw iOS"
 
   s.description  = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "5.0"
 
-  s.source       = { :git => "https://github.com/strawjs/straw-ios-service-toast.git", :tag => "v0.1.3" }
+  s.source       = { :git => "https://github.com/strawjs/straw-ios-service-toast.git", :tag => "v0.1.4" }
 
   s.source_files  = "StrawServiceToast/**/*.{h,m}"
 
